@@ -2889,6 +2889,40 @@ Toasted sesame seeds`,
             console.log('💝 Entering the Valentine\'s app!');
         }
 
+                // ==================== INITIALIZE ALL DATA ON PAGE LOAD ====================
+        console.log('🚀 Initializing Valentine\'s Day app...');
+        
+        // Initialize all sections
+        initializeRecipes();
+        displayRecipes();
+        
+        initializeBooks();
+        displayBooks();
+        
+        initializePhotos();
+        displayPhotos();
+        
+        initializeTrips();
+        displayTrips();
+        
+        initializeTriviaProgress();
+        
+        initializeSecretLetter();
+        updatePasswordPrompt();
+        
+        console.log('✅ App fully initialized!');
+        
+        // Test LocalStorage is working
+        try {
+            localStorage.setItem('test', 'test');
+            localStorage.removeItem('test');
+            console.log('✅ LocalStorage is working!');
+        } catch (e) {
+            console.error('❌ LocalStorage is NOT working:', e);
+            alert('⚠️ Warning: Your browser may be blocking data storage. Try using the site in normal (non-private) browsing mode.');
+        }
+
+
 
     </script>
 
