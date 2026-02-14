@@ -1,0 +1,2898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day 2026 💕</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'valentine-pink': '#FF69B4',
+                        'valentine-red': '#DC143C',
+                        'valentine-rose': '#FFB6C1',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom styles for smooth transitions */
+        .section {
+            display: none; /* Hide all sections by default */
+        }
+        
+        .section.active {
+            display: block; /* Show only the active section */
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ADD THESE NEW ANIMATIONS BELOW: */
+        
+        /* Fade in from top */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Fade in from bottom */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating hearts */
+        .heart-float {
+            position: absolute;
+            bottom: -50px;
+            font-size: 2rem;
+            animation: floatUp 15s infinite ease-in;
+            opacity: 0.6;
+        }
+
+        @keyframes floatUp {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                bottom: 110vh;
+                opacity: 0;
+            }
+        }
+
+        /* Tailwind animation classes */
+        .animate-fadeInDown {
+            animation: fadeInDown 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-red-50 min-h-screen">
+    
+    <!-- Main App Container -->
+    <div id="app" class="container mx-auto px-4 py-8 max-w-4xl">
+                <!-- ==================== INTRO SCREEN (SHOWS FIRST) ==================== -->
+        <section id="intro" class="section active">
+            <!-- Animated Background -->
+            <div class="fixed inset-0 bg-gradient-to-br from-pink-100 via-red-100 to-pink-200 -z-10"></div>
+            
+            <!-- Floating Hearts Animation -->
+            <div class="fixed inset-0 overflow-hidden pointer-events-none -z-5">
+                <div class="heart-float" style="left: 10%; animation-delay: 0s;">💕</div>
+                <div class="heart-float" style="left: 20%; animation-delay: 2s;">❤️</div>
+                <div class="heart-float" style="left: 30%; animation-delay: 4s;">💖</div>
+                <div class="heart-float" style="left: 40%; animation-delay: 1s;">💗</div>
+                <div class="heart-float" style="left: 50%; animation-delay: 3s;">💕</div>
+                <div class="heart-float" style="left: 60%; animation-delay: 5s;">❤️</div>
+                <div class="heart-float" style="left: 70%; animation-delay: 2.5s;">💖</div>
+                <div class="heart-float" style="left: 80%; animation-delay: 4.5s;">💗</div>
+                <div class="heart-float" style="left: 90%; animation-delay: 1.5s;">💕</div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="min-h-screen flex items-center justify-center px-4">
+                <div class="text-center max-w-2xl intro-content">
+                    
+                    <!-- Animated Title -->
+                    <h1 class="text-6xl md:text-8xl font-bold text-valentine-red mb-6 animate-fadeInDown">
+                        💕
+                    </h1>
+                    
+                    <h2 class="text-4xl md:text-6xl font-bold text-valentine-red mb-4 animate-fadeInUp" 
+                        style="animation-delay: 0.3s; font-family: 'Georgia', serif;">
+                        Happy Valentine's Day
+                    </h2>
+                    
+                    <p class="text-2xl md:text-3xl text-gray-700 mb-8 animate-fadeInUp" 
+                       style="animation-delay: 0.6s; font-family: 'Georgia', serif;">
+                        To Someone Very Special
+                    </p>
+
+                    <p class="text-lg md:text-xl text-gray-600 mb-12 animate-fadeInUp italic" 
+                       style="animation-delay: 0.9s;">
+                        I made something just for you...
+                    </p>
+
+                    <!-- Enter Button -->
+                    <button onclick="enterApp()" 
+                            class="bg-valentine-red text-white px-12 py-4 rounded-full text-xl font-bold shadow-2xl hover:bg-red-700 hover:scale-110 transition-all duration-300 animate-fadeInUp"
+                            style="animation-delay: 1.2s;">
+                        Enter 💝
+                    </button>
+
+                    <p class="text-sm text-gray-500 mt-8 animate-fadeInUp" 
+                       style="animation-delay: 1.5s;">
+                        February 14, 2026
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ==================== DASHBOARD SECTION ==================== -->
+        <section id="dashboard" class="section">
+
+            
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold text-valentine-red mb-2">
+                    💕 Valentine's Day 2026 💕
+                </h1>
+                <p class="text-gray-600 text-lg">
+                    A collection just for us (A&M)😂
+                </p>
+            </div>
+
+            <!-- Navigation Grid - Cards that navigate to different sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Cookbook Card -->
+                <button onclick="navigateTo('cookbook')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">👨‍🍳</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Our Cookbook</h2>
+                    <p class="text-gray-600">Recipes we've tried, loved, and want to try!</p>
+                </button>
+
+                <!-- Reading List Card -->
+                <button onclick="navigateTo('reading')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">📚</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Reading List</h2>
+                    <p class="text-gray-600">Books we have/want to read together</p>
+                </button>
+
+                <!-- Photo Gallery Card -->
+                <button onclick="navigateTo('gallery')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">📸</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Photo Gallery</h2>
+                    <p class="text-gray-600">Our favorite memories</p>
+                </button>
+
+                <!-- Trips Card -->
+                <button onclick="navigateTo('trips')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">✈️</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Our Trips</h2>
+                    <p class="text-gray-600">Adventures we've shared/planning trips</p>
+                </button>
+
+                <!-- Trivia Game Card -->
+                <button onclick="navigateTo('trivia')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">🎮</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Trivia Game</h2>
+                    <p class="text-gray-600">How well do we know random shit?😁</p>
+                </button>
+
+                <!-- Secret Letter Card -->
+                <button onclick="navigateTo('letter')" 
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-left">
+                    <div class="text-4xl mb-3">💌</div>
+                    <h2 class="text-2xl font-bold text-valentine-red mb-2">Secret Letter</h2>
+                    <p class="text-gray-600">A private message for you</p>
+                </button>
+
+            </div>
+        </section>
+
+                <!-- ==================== COOKBOOK SECTION ==================== -->
+        <section id="cookbook" class="section">
+            
+            <!-- Recipe List View (default view) -->
+            <div id="recipeListView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">👨‍🍳 Our Cookbook</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <!-- Add Recipe Button -->
+                <button onclick="showAddRecipeForm()" 
+                        class="mb-6 bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                    + Add New Recipe
+                </button>
+
+                <!-- Recipe Cards Grid -->
+                <div id="recipeCards" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Recipe cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Recipe Detail View (hidden by default) -->
+            <div id="recipeDetailView" class="hidden">
+                <button onclick="showRecipeList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Back to Recipes
+                </button>
+                
+                <div id="recipeDetailContent" class="bg-white p-8 rounded-2xl shadow-lg">
+                    <!-- Recipe details will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Add/Edit Recipe Form (hidden by default) -->
+            <div id="recipeFormView" class="hidden">
+                <button onclick="showRecipeList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Cancel
+                </button>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 id="formTitle" class="text-2xl font-bold text-valentine-red mb-6">Add New Recipe</h3>
+                    
+                    <form id="recipeForm" onsubmit="saveRecipe(event)">
+                        <!-- Hidden field to track if we're editing -->
+                        <input type="hidden" id="recipeId">
+
+                        <!-- Recipe Name -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Recipe Name</label>
+                            <input type="text" id="recipeName" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Serves -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Serves</label>
+                            <input type="text" id="recipeServes" 
+                                   placeholder="e.g., 2-3 people"
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Time -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Time</label>
+                            <input type="text" id="recipeTime" 
+                                   placeholder="e.g., 30 minutes"
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Ingredients -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Ingredients (one per line)</label>
+                            <textarea id="recipeIngredients" rows="8" required
+                                      placeholder="1 cup flour&#10;2 eggs&#10;1 tsp salt"
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"></textarea>
+                        </div>
+
+                        <!-- Instructions -->
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2">Instructions</label>
+                            <textarea id="recipeInstructions" rows="10" required
+                                      placeholder="Step-by-step instructions..."
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                            Save Recipe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+                <!-- ==================== READING LIST SECTION ==================== -->
+        <section id="reading" class="section">
+            
+            <!-- Book List View (default view) -->
+            <div id="bookListView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">📚 Reading List</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <!-- Add Book Button -->
+                <button onclick="showAddBookForm()" 
+                        class="mb-6 bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                    + Add New Book
+                </button>
+
+                <!-- Filter Tabs -->
+                <div class="flex gap-4 mb-6 border-b border-gray-200">
+                    <button onclick="filterBooks('all')" id="filterAll"
+                            class="pb-2 px-4 font-semibold text-valentine-red border-b-2 border-valentine-red">
+                        All Books
+                    </button>
+                    <button onclick="filterBooks('reading')" id="filterReading"
+                            class="pb-2 px-4 font-semibold text-gray-500 hover:text-valentine-red">
+                        Currently Reading
+                    </button>
+                    <button onclick="filterBooks('want')" id="filterWant"
+                            class="pb-2 px-4 font-semibold text-gray-500 hover:text-valentine-red">
+                        Want to Read
+                    </button>
+                    <button onclick="filterBooks('finished')" id="filterFinished"
+                            class="pb-2 px-4 font-semibold text-gray-500 hover:text-valentine-red">
+                        Finished
+                    </button>
+                </div>
+
+                <!-- Book Cards Grid -->
+                <div id="bookCards" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Book cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Book Detail View (hidden by default) -->
+            <div id="bookDetailView" class="hidden">
+                <button onclick="showBookList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Back to Reading List
+                </button>
+                
+                <div id="bookDetailContent" class="bg-white p-8 rounded-2xl shadow-lg">
+                    <!-- Book details will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Add/Edit Book Form (hidden by default) -->
+            <div id="bookFormView" class="hidden">
+                <button onclick="showBookList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Cancel
+                </button>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 id="bookFormTitle" class="text-2xl font-bold text-valentine-red mb-6">Add New Book</h3>
+                    
+                    <form id="bookForm" onsubmit="saveBook(event)">
+                        <!-- Hidden field to track if we're editing -->
+                        <input type="hidden" id="bookId">
+
+                        <!-- Book Title -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Book Title</label>
+                            <input type="text" id="bookTitle" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Author -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Author</label>
+                            <input type="text" id="bookAuthor" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Reading Status</label>
+                            <select id="bookStatus" onchange="toggleRatingField()"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                                <option value="want">Want to Read</option>
+                                <option value="reading">Currently Reading</option>
+                                <option value="finished">Finished</option>
+                            </select>
+                        </div>
+
+                        <!-- Rating (only shown if status is "finished") -->
+                        <div id="ratingField" class="mb-4 hidden">
+                            <label class="block text-gray-700 font-bold mb-2">Rating</label>
+                            <div class="flex gap-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="rating" value="1" class="mr-1"> 1⭐
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="rating" value="2" class="mr-1"> 2⭐
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="rating" value="3" class="mr-1"> 3⭐
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="rating" value="4" class="mr-1"> 4⭐
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="rating" value="5" class="mr-1"> 5⭐
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2">Notes / Thoughts</label>
+                            <textarea id="bookNotes" rows="6"
+                                      placeholder="What did you think? Any memorable quotes or thoughts?"
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                            Save Book
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+                <!-- ==================== PHOTO GALLERY SECTION ==================== -->
+        <section id="gallery" class="section">
+            
+            <!-- Gallery Main View -->
+            <div id="galleryMainView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">📸 Photo Gallery</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <!-- Upload Photos Button -->
+                <div class="mb-6">
+                    <label for="photoUpload" 
+                           class="inline-block bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors cursor-pointer">
+                        📤 Upload Photos
+                    </label>
+                    <!-- Hidden file input that accepts multiple images -->
+                    <input type="file" id="photoUpload" accept="image/*" multiple 
+                           onchange="handlePhotoUpload(event)" class="hidden">
+                    <p class="text-sm text-gray-500 mt-2">
+                        💡 Tip: You can select multiple photos at once!
+                    </p>
+                </div>
+
+                <!-- Photo Grid -->
+                <div id="photoGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Photos will be inserted here by JavaScript -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyGallery" class="hidden text-center py-12">
+                    <p class="text-gray-500 text-lg mb-4">📷 No photos yet!</p>
+                    <p class="text-gray-400">Upload your first memory to get started.</p>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal (for viewing full-size photos) -->
+            <div id="lightboxModal" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+                 onclick="closeLightbox()">
+                
+                <button onclick="closeLightbox()" 
+                        class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 z-10">
+                    ×
+                </button>
+
+                <!-- Modal Content -->
+                <div class="max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl" 
+                     onclick="event.stopPropagation()">
+                    
+                    <!-- Photo Display -->
+                    <div class="relative bg-black">
+                        <img id="lightboxImage" src="" alt="" class="w-full max-h-[70vh] object-contain">
+                    </div>
+
+                    <!-- Photo Info and Actions -->
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Caption</label>
+                            <input type="text" id="lightboxCaption" 
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"
+                                   placeholder="Add a caption for this memory...">
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            <button onclick="savePhotoCaption()" 
+                                    class="bg-valentine-red text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                Save Caption
+                            </button>
+                            <button onclick="deletePhoto()" 
+                                    class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                                Delete Photo
+                            </button>
+                            <button onclick="closeLightbox()" 
+                                    class="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+                <!-- ==================== TRIPS SECTION ==================== -->
+        <section id="trips" class="section">
+            
+            <!-- Trips List View -->
+            <div id="tripsListView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">✈️ Our Trips</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <!-- Add Trip Button -->
+                <button onclick="showAddTripForm()" 
+                        class="mb-6 bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                    + Add New Trip
+                </button>
+
+                <!-- Filter Tabs -->
+                <div class="flex gap-4 mb-6 border-b border-gray-200">
+                    <button onclick="filterTrips('all')" id="filterAllTrips"
+                            class="pb-2 px-4 font-semibold text-valentine-red border-b-2 border-valentine-red">
+                        All Trips
+                    </button>
+                    <button onclick="filterTrips('upcoming')" id="filterUpcoming"
+                            class="pb-2 px-4 font-semibold text-gray-500 hover:text-valentine-red">
+                        Upcoming
+                    </button>
+                    <button onclick="filterTrips('past')" id="filterPast"
+                            class="pb-2 px-4 font-semibold text-gray-500 hover:text-valentine-red">
+                        Past Adventures
+                    </button>
+                </div>
+
+                <!-- Trips Grid -->
+                <div id="tripsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Trip cards will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Trip Detail View -->
+            <div id="tripDetailView" class="hidden">
+                <button onclick="showTripsList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Back to Trips
+                </button>
+                
+                <div id="tripDetailContent" class="bg-white p-8 rounded-2xl shadow-lg">
+                    <!-- Trip details will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Add/Edit Trip Form -->
+            <div id="tripFormView" class="hidden">
+                <button onclick="showTripsList()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Cancel
+                </button>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 id="tripFormTitle" class="text-2xl font-bold text-valentine-red mb-6">Add New Trip</h3>
+                    
+                    <form id="tripForm" onsubmit="saveTrip(event)">
+                        <input type="hidden" id="tripId">
+
+                        <!-- Destination -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Destination</label>
+                            <input type="text" id="tripDestination" required
+                                   placeholder="e.g., Oregon, Duluth, Paris"
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Start Date -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Start Date</label>
+                            <input type="date" id="tripStartDate" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- End Date -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">End Date</label>
+                            <input type="date" id="tripEndDate" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Status</label>
+                            <select id="tripStatus"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red">
+                                <option value="upcoming">Upcoming / Planned</option>
+                                <option value="past">Completed</option>
+                            </select>
+                        </div>
+
+                        <!-- Highlights -->
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2">Highlights (one per line)</label>
+                            <textarea id="tripHighlights" rows="6"
+                                      placeholder="What made this trip special?&#10;Best restaurants&#10;Favorite activities&#10;Memorable moments"
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"></textarea>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2">Notes / Memories</label>
+                            <textarea id="tripNotes" rows="6"
+                                      placeholder="Any other thoughts, stories, or details about this trip..."
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                            Save Trip
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+                <!-- ==================== TRIVIA SECTION ==================== -->
+        <section id="trivia" class="section">
+            
+            <!-- Trivia Menu View (default) -->
+            <div id="triviaMenuView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">🎮 Trivia Game</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <!-- Score Display -->
+                <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-valentine-red">Your Score</h3>
+                            <p id="scoreDisplay" class="text-4xl font-bold text-gray-700 mt-2">0 / 0</p>
+                        </div>
+                        <button onclick="resetTriviaProgress()" 
+                                class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Reset Progress
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Selection -->
+                <h3 class="text-xl font-bold text-gray-700 mb-4">Choose a Category:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <button onclick="startTrivia('all')" 
+                            class="bg-gradient-to-r from-valentine-pink to-valentine-red text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="text-4xl mb-2">🎯</div>
+                        <h4 class="text-xl font-bold mb-1">All Categories</h4>
+                        <p id="progress-all" class="text-sm opacity-90">0 answered</p>
+                    </button>
+
+                    <button onclick="startTrivia('about-us')" 
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-valentine-pink">
+                        <div class="text-4xl mb-2">💕</div>
+                        <h4 class="text-xl font-bold text-valentine-red mb-1">About Us</h4>
+                        <p id="progress-about-us" class="text-sm text-gray-600">0 answered</p>
+                    </button>
+
+                    <button onclick="startTrivia('movies')" 
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-blue-400">
+                        <div class="text-4xl mb-2">🎬</div>
+                        <h4 class="text-xl font-bold text-blue-600 mb-1">Movies & TV</h4>
+                        <p id="progress-movies" class="text-sm text-gray-600">0 answered</p>
+                    </button>
+
+                    <button onclick="startTrivia('music')" 
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-purple-400">
+                        <div class="text-4xl mb-2">🎵</div>
+                        <h4 class="text-xl font-bold text-purple-600 mb-1">Music</h4>
+                        <p id="progress-music" class="text-sm text-gray-600">0 answered</p>
+                    </button>
+
+                    <button onclick="startTrivia('food')" 
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-orange-400">
+                        <div class="text-4xl mb-2">🍕</div>
+                        <h4 class="text-xl font-bold text-orange-600 mb-1">Food</h4>
+                        <p id="progress-food" class="text-sm text-gray-600">0 answered</p>
+                    </button>
+
+                    <button onclick="startTrivia('travel')" 
+                            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 border-green-400">
+                        <div class="text-4xl mb-2">✈️</div>
+                        <h4 class="text-xl font-bold text-green-600 mb-1">Travel</h4>
+                        <p id="progress-travel" class="text-sm text-gray-600">0 answered</p>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Trivia Game View (hidden by default) -->
+            <div id="triviaGameView" class="hidden">
+                <button onclick="exitTriviaGame()" 
+                        class="mb-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                    ← Back to Categories
+                </button>
+
+                <!-- Current Category Badge -->
+                <div class="mb-4">
+                    <span id="currentCategoryBadge" class="inline-block px-4 py-2 rounded-full text-sm font-bold bg-valentine-pink text-white">
+                        Category
+                    </span>
+                </div>
+
+                <!-- Question Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg mb-6">
+                    <h3 id="questionText" class="text-2xl font-bold text-gray-800 mb-6">
+                        Loading question...
+                    </h3>
+
+                    <!-- Answer Options -->
+                    <div id="answerOptions" class="space-y-3">
+                        <!-- Options will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Feedback Section (hidden until answer selected) -->
+                <div id="feedbackSection" class="hidden bg-white p-6 rounded-2xl shadow-lg">
+                    <div id="feedbackContent">
+                        <!-- Feedback will be inserted here -->
+                    </div>
+                    <button onclick="nextQuestion()" 
+                            class="mt-4 bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                        Next Question →
+                    </button>
+                </div>
+
+                <!-- No More Questions Message -->
+                <div id="noQuestionsMessage" class="hidden bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <h3 class="text-2xl font-bold text-valentine-red mb-4">🎉 Category Complete!</h3>
+                    <p class="text-gray-700 mb-6">You've answered all questions in this category!</p>
+                    <button onclick="exitTriviaGame()" 
+                            class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                        Choose Another Category
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+                <!-- ==================== SECRET LETTER SECTION ==================== -->
+        <section id="letter" class="section">
+            
+            <!-- Password Entry View -->
+            <div id="passwordEntryView">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">💌 Secret Letter</h2>
+                    <button onclick="navigateTo('dashboard')" 
+                            class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                        ← Dashboard
+                    </button>
+                </div>
+
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                        <div class="text-6xl mb-4">🔒</div>
+                        <h3 id="passwordPromptTitle" class="text-2xl font-bold text-valentine-red mb-4">
+                            This letter is protected
+                        </h3>
+                        <p id="passwordPromptMessage" class="text-gray-600 mb-6">
+                            Enter the password to read this special message
+                        </p>
+
+                        <form onsubmit="unlockLetter(event)" class="max-w-md mx-auto">
+                            <input type="password" id="letterPassword" required
+                                   placeholder="Enter password"
+                                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red mb-4 text-center text-lg">
+                            
+                            <button type="submit" 
+                                    class="w-full bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-bold">
+                                Unlock Letter 💕
+                            </button>
+                        </form>
+
+                        <p id="passwordError" class="text-red-500 mt-4 hidden">Incorrect password. Try again!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Letter View (unlocked) -->
+            <div id="letterView" class="hidden">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-valentine-red">💌 Secret Letter</h2>
+                    <div class="flex gap-2">
+                        <button onclick="lockLetter()" 
+                                class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                            🔒 Lock Letter
+                        </button>
+                        <button onclick="navigateTo('dashboard')" 
+                                class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors">
+                            ← Dashboard
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Letter Display Mode -->
+                <div id="letterDisplayMode">
+                    <div class="max-w-3xl mx-auto bg-gradient-to-br from-pink-50 to-red-50 p-8 md:p-12 rounded-2xl shadow-2xl border-4 border-valentine-rose">
+                        
+                        <!-- Letter Header -->
+                        <div class="text-center mb-8 pb-6 border-b-2 border-valentine-rose">
+                            <div class="text-4xl mb-3">💕</div>
+                            <h3 class="text-3xl font-bold text-valentine-red mb-2" style="font-family: 'Georgia', serif;">
+                                To My Valentine
+                            </h3>
+                            <p class="text-gray-500 italic">A letter just for you</p>
+                        </div>
+
+                        <!-- Letter Content -->
+                        <div id="letterContent" class="prose prose-lg max-w-none mb-8">
+                            <p class="text-gray-500 italic text-center">No letter written yet. Click "Edit Letter" to write your message.</p>
+                        </div>
+
+                        <!-- Letter Footer -->
+                        <div class="text-right pt-6 border-t-2 border-valentine-rose">
+                            <p class="text-xl font-bold text-valentine-red" style="font-family: 'Georgia', serif;">
+                                With all my love,
+                            </p>
+                            <p class="text-lg text-gray-700 mt-2">❤️</p>
+                            <p class="text-sm text-gray-500 mt-4">Valentine's Day 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto mt-6 flex justify-center gap-3">
+                        <button onclick="showLetterEditMode()" 
+                                class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-bold">
+                            ✏️ Edit Letter
+                        </button>
+                        <button onclick="changePassword()" 
+                                class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                            Change Password
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Letter Edit Mode (hidden by default) -->
+                <div id="letterEditMode" class="hidden">
+                    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-valentine-red mb-6">Write Your Letter 💕</h3>
+                        
+                        <form onsubmit="saveLetterContent(event)">
+                            <textarea id="letterTextarea" rows="20"
+                                      placeholder="Pour your heart out... &#10;&#10;Tell her how she makes you feel, what she means to you, your favorite memories together, what you're excited for in the future...&#10;&#10;This is your space to be vulnerable and express everything. 💕"
+                                      class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-valentine-red mb-4 font-serif text-lg leading-relaxed"></textarea>
+                            
+                            <div class="flex gap-3">
+                                <button type="submit" 
+                                        class="bg-valentine-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-bold">
+                                    💾 Save Letter
+                                </button>
+                                <button type="button" onclick="cancelLetterEdit()" 
+                                        class="bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // This function handles navigation between different sections
+        // Think of it like a switch statement in Java or if-elif in Python
+        function navigateTo(sectionId) {
+            console.log('Navigating to:', sectionId); // For debugging
+            
+            // Step 1: Hide ALL sections by removing the 'active' class
+            // querySelectorAll is like finding all elements that match - similar to finding all items in a list
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(section => {
+                section.classList.remove('active'); // Remove 'active' from each section
+            });
+            
+            // Step 2: Show ONLY the section we want by adding the 'active' class
+            // getElementById is like accessing a dictionary/map by key
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active'); // Make this section visible
+            } else {
+                console.error('Section not found:', sectionId); // Error handling
+            }
+        }
+        
+        // Confirm JavaScript is working
+        console.log('✅ Navigation system loaded!');
+        console.log('💡 Try clicking the cards to navigate between sections');
+
+                // ==================== COOKBOOK JAVASCRIPT ====================
+        
+        // Initialize recipes in LocalStorage with your 6 recipes
+        function initializeRecipes() {
+            // Check if recipes already exist in LocalStorage
+            const existing = localStorage.getItem('recipes');
+            if (existing) {
+                // Recipes already loaded, don't overwrite
+                return;
+            }
+
+            // Your 6 recipes from Recipes.md
+            const initialRecipes = [
+                {
+                    id: Date.now() + 1,
+                    name: "Sesame Garlic Salmon Bowl",
+                    serves: "2",
+                    time: "~35 minutes",
+                    ingredients: `1 cup white rice
+2 cups water
+Pinch salt
+2 salmon fillets (about 6 oz each)
+2 cloves fresh garlic, minced
+Salt and black pepper
+1 tbsp olive oil
+1 tbsp sesame oil
+1 tbsp rice vinegar
+1 avocado, sliced
+Sesame seeds`,
+                    instructions: `1. Cook the rice:
+   - Rinse 1 cup rice until water runs mostly clear
+   - Add to pot with 2 cups water and a pinch of salt
+   - Bring to boil, then lower to very low and cover
+   - Simmer 15 minutes
+   - Turn off heat. Let sit covered 10 minutes. Do not touch it.
+   - Fluff with fork
+
+2. Cook the salmon:
+   - Pat salmon dry. Salt and pepper both sides
+   - Heat pan over medium heat. Add oil
+   - Place salmon skin-side down
+   - Cook 4–5 minutes without moving it
+   - Flip. Add minced garlic to the pan
+   - Cook 2–3 more minutes. Spoon the garlic oil over the fish
+
+3. Assemble:
+   - Scoop rice into bowl
+   - Place salmon on top
+   - Drizzle sesame oil + rice vinegar over everything
+   - Add avocado slices
+   - Sprinkle sesame seeds
+
+Balanced fat, acid, protein. Clean bowl.`
+                },
+                {
+                    id: Date.now() + 2,
+                    name: "Stovetop Butter Chicken",
+                    serves: "3-4",
+                    time: "~1 hour",
+                    ingredients: `1.5 lbs chicken (bite-sized pieces)
+1 cup Greek yogurt
+1 tbsp garam masala
+1 tsp paprika
+1 tsp curry powder
+2 cloves garlic, minced
+1 tsp salt
+2 tbsp butter
+1–1.5 cups tomato sauce
+½ tsp chili powder
+1 tsp sugar
+¾ cup heavy cream`,
+                    instructions: `1. Marinate:
+   - Mix yogurt + spices + garlic + salt
+   - Coat chicken
+   - Cover. Fridge 30–60 minutes
+
+2. Cook chicken:
+   - Heat pan medium-high
+   - Add oil or butter
+   - Cook chicken in batches until lightly browned
+   - Remove
+
+3. Build sauce:
+   - Lower heat to medium
+   - Add butter
+   - Add garlic. Cook 30 seconds
+   - Add tomato sauce + spices + sugar
+   - Simmer 5–8 minutes
+
+4. Finish:
+   - Add cream. Stir
+   - Return chicken to pan
+   - Simmer 8–10 minutes until thick and chicken hits 165°F
+
+Serve with rice. Rich, creamy, layered spice.`
+                },
+                {
+                    id: Date.now() + 3,
+                    name: "Classic Smash Burgers",
+                    serves: "4 burgers",
+                    time: "~20 minutes",
+                    ingredients: `1 lb 80/20 ground beef
+Salt
+Black pepper
+Worcestershire sauce
+4 slices American cheese
+Brioche buns
+Butter (for buns)`,
+                    instructions: `1. Form meat:
+   - Divide into 4 loose balls (about 4 oz each)
+   - Do not compact them
+
+2. Heat pan:
+   - Cast iron. High heat
+   - It should be ripping hot
+
+3. Smash:
+   - Place ball in pan
+   - Wait 5 seconds
+   - Smash firmly with spatula
+   - Hold pressure 10 seconds
+   - Season top with salt + pepper
+   - Splash a tiny bit Worcestershire
+
+4. Cook:
+   - Cook 1.5–2 minutes until edges crisp and brown
+   - Flip
+   - Immediately add American cheese
+   - Cook 1 more minute
+
+5. Toast buns:
+   - Butter cut sides
+   - Toast in pan until golden
+
+6. Assemble:
+   - Burger + cheese + bun. Done.`
+                },
+                {
+                    id: Date.now() + 4,
+                    name: "Jerk Chicken Corn Tortilla Tacos",
+                    serves: "3-4",
+                    time: "~40 minutes",
+                    ingredients: `1.5 lbs boneless skinless chicken thighs
+1 tbsp olive oil
+
+Homemade Jerk Seasoning:
+2 tsp paprika
+1 tsp garlic powder
+1 tsp onion powder
+1 tsp dried thyme
+1 tsp dried oregano
+½–1 tsp cayenne
+1 tsp brown sugar
+½ tsp cinnamon
+¼ tsp ground allspice
+1 tsp salt
+½ tsp black pepper
+
+For Serving:
+Corn tortillas
+Fresh cilantro, chopped
+Sour cream (optional)
+Lime wedges`,
+                    instructions: `1. Build the Jerk Paste:
+   - Mix all dry spices
+   - Add olive oil
+   - Should form a thick, wet rub
+
+2. Season the Chicken:
+   - Pat chicken dry
+   - Coat thoroughly in the jerk mixture
+   - Let sit 15–20 minutes (or overnight in fridge)
+
+3. Pan Cooking:
+   - Heat skillet over medium-high
+   - Add small drizzle of oil
+   - Lay chicken flat. Do not crowd
+   - Cook 4–5 minutes untouched
+   - Flip. Cook another 4–5 minutes (165°F internal temp)
+   - Remove. Rest 5 minutes. Slice into strips
+
+4. Warm Tortillas:
+   - Dry skillet. Medium heat
+   - 20–30 seconds per side
+
+5. Assemble:
+   - Chicken
+   - Chopped fresh cilantro
+   - Sour cream
+   - Squeeze of lime`
+                },
+                {
+                    id: Date.now() + 5,
+                    name: "Chicken Avocado Ranch Burritos",
+                    serves: "2 large burritos",
+                    time: "~25 minutes",
+                    ingredients: `1 lb boneless, skinless chicken breasts
+1 tablespoon olive oil
+
+Seasoning:
+1 tsp smoked paprika
+1 tsp garlic powder
+1 tsp onion powder
+¾ tsp ground cumin
+¼ tsp cayenne pepper
+¾ tsp salt
+¼ tsp black pepper
+
+Filling:
+1 cup shredded sharp cheddar cheese
+1 large ripe avocado, cubed
+⅓ cup ranch dressing
+2 large flour tortillas (burrito size)
+Optional: fresh chopped cilantro`,
+                    instructions: `1. Prepare the Chicken:
+   - Pat chicken dry
+   - Rub with olive oil
+   - Combine all seasoning ingredients and coat both sides
+
+2. Cook the Chicken:
+   - Heat skillet over medium heat
+   - Cook 5–7 minutes without moving
+   - Flip and cook another 5–7 minutes (165°F internal temp)
+   - Remove from heat and let rest 5 minutes
+   - Shred using two forks
+
+3. Prepare Fillings:
+   - Cube avocado and lightly season with salt
+   - Warm tortillas in dry skillet for 20 seconds per side
+
+4. Assemble the Burritos:
+   - Divide shredded chicken between tortillas
+   - Add ½ cup cheese per burrito
+   - Add 2–3 tbsp ranch per burrito
+   - Add ½ avocado per burrito
+   - Optional: add cilantro
+
+5. Roll the Burritos:
+   - Fold sides inward
+   - Roll tightly from bottom up
+
+6. Toast the Burritos:
+   - Return skillet to medium heat
+   - Place burritos seam-side down
+   - Toast 2–3 minutes per side until golden and crisp
+   - Let rest 1–2 minutes before slicing`
+                },
+                {
+                    id: Date.now() + 6,
+                    name: "Honey Garlic Chicken Noodles",
+                    serves: "2-3",
+                    time: "~25 minutes",
+                    ingredients: `1.43 lb chicken, diced into bite-sized chunks
+4 garlic cloves, minced
+
+Sauce Mix:
+⅓ cup honey
+3 tbsp soy sauce
+1½ tbsp rice vinegar
+1½ tsp sesame oil
+4 minced garlic cloves
+⅓ cup water
+Optional: ½–1 tsp chili flakes
+
+3 ramen noodle packs (just the noodles)
+1½ tbsp neutral oil
+2 tbsp cornstarch (optional)
+1 tsp salt + ½ tsp pepper
+
+Garnish:
+Sliced green onions
+Toasted sesame seeds`,
+                    instructions: `1. Prep Everything:
+   - Dice chicken into small chunks
+   - Mince garlic cloves
+   - Whisk together all sauce ingredients in a bowl
+
+2. Boil Noodles:
+   - Boil ramen noodles 2½ to 3 minutes max
+   - Drain and set aside. Add few drops of oil to prevent sticking
+
+3. Sear the Chicken:
+   - Toss diced chicken with cornstarch, salt, and pepper
+   - Heat 1½ tbsp oil in large skillet over medium-high
+   - Add chicken in single layer (don't crowd)
+   - Sear undisturbed 3–4 minutes
+   - Flip and cook until browned & fully cooked (165°F)
+
+4. Add Sauce & Simmer:
+   - Reduce heat to medium
+   - Pour in sauce mix
+   - Stir and simmer until it thickens & gets glossy (2–3 mins)
+
+5. Toss in Noodles:
+   - Add drained noodles into sauce-chicken mix
+   - Toss until noodles are evenly coated
+   - Simmer 1–2 mins so noodles soak up flavor
+
+6. Garnish & Serve:
+   - Sprinkle with sliced green onions
+   - Add toasted sesame seeds
+   - Serve hot!`
+                }
+            ];
+
+            // Save to LocalStorage
+            localStorage.setItem('recipes', JSON.stringify(initialRecipes));
+            console.log('✅ 6 recipes initialized in LocalStorage!');
+        }
+
+        // Load recipes from LocalStorage
+        function getRecipes() {
+            const recipes = localStorage.getItem('recipes');
+            return recipes ? JSON.parse(recipes) : [];
+        }
+
+        // Save recipes to LocalStorage
+        function saveRecipesToStorage(recipes) {
+            localStorage.setItem('recipes', JSON.stringify(recipes));
+        }
+
+        // Display all recipe cards
+        function displayRecipes() {
+            const recipes = getRecipes();
+            const container = document.getElementById('recipeCards');
+            
+            if (recipes.length === 0) {
+                container.innerHTML = '<p class="text-gray-500">No recipes yet. Add your first one!</p>';
+                return;
+            }
+
+            // Build HTML for each recipe card
+            container.innerHTML = recipes.map(recipe => `
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold text-valentine-red mb-2">${recipe.name}</h3>
+                    <div class="text-sm text-gray-600 mb-4">
+                        ${recipe.serves ? `<p>🍽️ Serves: ${recipe.serves}</p>` : ''}
+                        ${recipe.time ? `<p>⏱️ Time: ${recipe.time}</p>` : ''}
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="viewRecipe(${recipe.id})" 
+                                class="flex-1 bg-valentine-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                            View Recipe
+                        </button>
+                        <button onclick="editRecipe(${recipe.id})" 
+                                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                            Edit
+                        </button>
+                        <button onclick="deleteRecipe(${recipe.id})" 
+                                class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // View a single recipe's details
+        function viewRecipe(id) {
+            const recipes = getRecipes();
+            const recipe = recipes.find(r => r.id === id);
+            
+            if (!recipe) return;
+
+            const content = document.getElementById('recipeDetailContent');
+            content.innerHTML = `
+                <h2 class="text-3xl font-bold text-valentine-red mb-4">${recipe.name}</h2>
+                
+                <div class="mb-6">
+                    ${recipe.serves ? `<p class="text-gray-700"><strong>🍽️ Serves:</strong> ${recipe.serves}</p>` : ''}
+                    ${recipe.time ? `<p class="text-gray-700"><strong>⏱️ Time:</strong> ${recipe.time}</p>` : ''}
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-valentine-red mb-2">Ingredients</h3>
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                        <pre class="whitespace-pre-wrap font-sans text-gray-700">${recipe.ingredients}</pre>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-valentine-red mb-2">Instructions</h3>
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                        <pre class="whitespace-pre-wrap font-sans text-gray-700">${recipe.instructions}</pre>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <button onclick="editRecipe(${recipe.id})" 
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                        Edit Recipe
+                    </button>
+                    <button onclick="deleteRecipe(${recipe.id})" 
+                            class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors">
+                        Delete Recipe
+                    </button>
+                </div>
+            `;
+
+            // Show detail view, hide list view
+            document.getElementById('recipeListView').classList.add('hidden');
+            document.getElementById('recipeDetailView').classList.remove('hidden');
+        }
+
+        // Show the recipe list
+        function showRecipeList() {
+            document.getElementById('recipeListView').classList.remove('hidden');
+            document.getElementById('recipeDetailView').classList.add('hidden');
+            document.getElementById('recipeFormView').classList.add('hidden');
+            displayRecipes(); // Refresh the list
+        }
+
+        // Show the add recipe form
+        function showAddRecipeForm() {
+            document.getElementById('formTitle').textContent = 'Add New Recipe';
+            document.getElementById('recipeForm').reset();
+            document.getElementById('recipeId').value = ''; // Clear hidden ID field
+            
+            document.getElementById('recipeListView').classList.add('hidden');
+            document.getElementById('recipeFormView').classList.remove('hidden');
+        }
+
+        // Edit an existing recipe
+        function editRecipe(id) {
+            const recipes = getRecipes();
+            const recipe = recipes.find(r => r.id === id);
+            
+            if (!recipe) return;
+
+            // Populate form with existing data
+            document.getElementById('formTitle').textContent = 'Edit Recipe';
+            document.getElementById('recipeId').value = recipe.id;
+            document.getElementById('recipeName').value = recipe.name;
+            document.getElementById('recipeServes').value = recipe.serves || '';
+            document.getElementById('recipeTime').value = recipe.time || '';
+            document.getElementById('recipeIngredients').value = recipe.ingredients;
+            document.getElementById('recipeInstructions').value = recipe.instructions;
+
+            // Show form
+            document.getElementById('recipeListView').classList.add('hidden');
+            document.getElementById('recipeDetailView').classList.add('hidden');
+            document.getElementById('recipeFormView').classList.remove('hidden');
+        }
+
+        // Save recipe (handles both add and edit)
+        function saveRecipe(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            const id = document.getElementById('recipeId').value;
+            const name = document.getElementById('recipeName').value;
+            const serves = document.getElementById('recipeServes').value;
+            const time = document.getElementById('recipeTime').value;
+            const ingredients = document.getElementById('recipeIngredients').value;
+            const instructions = document.getElementById('recipeInstructions').value;
+
+            let recipes = getRecipes();
+
+            if (id) {
+                // Editing existing recipe
+                recipes = recipes.map(r => 
+                    r.id === parseInt(id) 
+                        ? { id: parseInt(id), name, serves, time, ingredients, instructions }
+                        : r
+                );
+                console.log('✅ Recipe updated!');
+            } else {
+                // Adding new recipe
+                const newRecipe = {
+                    id: Date.now(), // Unique ID based on timestamp
+                    name,
+                    serves,
+                    time,
+                    ingredients,
+                    instructions
+                };
+                recipes.push(newRecipe);
+                console.log('✅ New recipe added!');
+            }
+
+            saveRecipesToStorage(recipes);
+            showRecipeList();
+        }
+
+        // Delete a recipe
+        function deleteRecipe(id) {
+            // Ask for confirmation
+            if (!confirm('Are you sure you want to delete this recipe?')) {
+                return;
+            }
+
+            let recipes = getRecipes();
+            recipes = recipes.filter(r => r.id !== id); // Remove recipe with matching ID
+            saveRecipesToStorage(recipes);
+            
+            console.log('✅ Recipe deleted!');
+            showRecipeList();
+        }
+
+        // Initialize recipes on page load
+        initializeRecipes();
+        displayRecipes();
+
+                // ==================== READING LIST JAVASCRIPT ====================
+        
+        let currentBookFilter = 'all'; // Track which filter is active
+
+        // Initialize books in LocalStorage
+        function initializeBooks() {
+            const existing = localStorage.getItem('books');
+            if (existing) {
+                return; // Books already loaded
+            }
+
+            // Pre-load with Black Cake and a few examples
+            const initialBooks = [
+                {
+                    id: Date.now() + 1,
+                    title: "Black Cake",
+                    author: "Charmaine Wilkerson",
+                    status: "reading", // Currently reading
+                    rating: null,
+                    notes: "A family mystery spanning decades and continents!"
+                },
+                {
+                    id: Date.now() + 2,
+                    title: "The Seven Husbands of Evelyn Hugo",
+                    author: "Taylor Jenkins Reid",
+                    status: "want",
+                    rating: null,
+                    notes: ""
+                },
+                {
+                    id: Date.now() + 3,
+                    title: "Tomorrow, and Tomorrow, and Tomorrow",
+                    author: "Gabrielle Zevin",
+                    status: "want",
+                    rating: null,
+                    notes: "About friendship, game design, and creativity"
+                }
+            ];
+
+            localStorage.setItem('books', JSON.stringify(initialBooks));
+            console.log('✅ Reading list initialized!');
+        }
+
+        // Get books from LocalStorage
+        function getBooks() {
+            const books = localStorage.getItem('books');
+            return books ? JSON.parse(books) : [];
+        }
+
+        // Save books to LocalStorage
+        function saveBooksToStorage(books) {
+            localStorage.setItem('books', JSON.stringify(books));
+        }
+
+        // Get status badge color and text
+        function getStatusBadge(status) {
+            const badges = {
+                'want': { color: 'bg-blue-100 text-blue-800', text: '📖 Want to Read' },
+                'reading': { color: 'bg-green-100 text-green-800', text: '📚 Currently Reading' },
+                'finished': { color: 'bg-purple-100 text-purple-800', text: '✅ Finished' }
+            };
+            return badges[status] || badges['want'];
+        }
+
+        // Generate star rating display
+        function getStarRating(rating) {
+            if (!rating) return '';
+            return '⭐'.repeat(rating);
+        }
+
+        // Display books based on current filter
+        function displayBooks() {
+            const allBooks = getBooks();
+            
+            // Filter books based on currentBookFilter
+            const books = currentBookFilter === 'all' 
+                ? allBooks 
+                : allBooks.filter(b => b.status === currentBookFilter);
+
+            const container = document.getElementById('bookCards');
+            
+            if (books.length === 0) {
+                container.innerHTML = '<p class="text-gray-500">No books in this category yet!</p>';
+                return;
+            }
+
+            // Build HTML for each book card
+            container.innerHTML = books.map(book => {
+                const badge = getStatusBadge(book.status);
+                const stars = book.rating ? `<p class="text-yellow-500 text-lg">${getStarRating(book.rating)}</p>` : '';
+                
+                return `
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-valentine-red flex-1">${book.title}</h3>
+                        </div>
+                        <p class="text-gray-600 mb-3">by ${book.author}</p>
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold ${badge.color}">
+                                ${badge.text}
+                            </span>
+                        </div>
+                        ${stars}
+                        <div class="flex gap-2 mt-4">
+                            <button onclick="viewBook(${book.id})" 
+                                    class="flex-1 bg-valentine-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                View Details
+                            </button>
+                            <button onclick="editBook(${book.id})" 
+                                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Edit
+                            </button>
+                            <button onclick="deleteBook(${book.id})" 
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter books by status
+        function filterBooks(status) {
+            currentBookFilter = status;
+            
+            // Update active tab styling
+            const tabs = ['filterAll', 'filterReading', 'filterWant', 'filterFinished'];
+            tabs.forEach(tabId => {
+                const tab = document.getElementById(tabId);
+                tab.classList.remove('text-valentine-red', 'border-b-2', 'border-valentine-red');
+                tab.classList.add('text-gray-500');
+            });
+            
+            // Highlight active tab
+            const activeTabMap = {
+                'all': 'filterAll',
+                'reading': 'filterReading',
+                'want': 'filterWant',
+                'finished': 'filterFinished'
+            };
+            const activeTab = document.getElementById(activeTabMap[status]);
+            activeTab.classList.remove('text-gray-500');
+            activeTab.classList.add('text-valentine-red', 'border-b-2', 'border-valentine-red');
+            
+            displayBooks();
+        }
+
+        // View a single book's details
+        function viewBook(id) {
+            const books = getBooks();
+            const book = books.find(b => b.id === id);
+            
+            if (!book) return;
+
+            const badge = getStatusBadge(book.status);
+            const stars = book.rating ? `
+                <div class="mb-4">
+                    <p class="text-gray-700 font-bold mb-1">Rating:</p>
+                    <p class="text-yellow-500 text-2xl">${getStarRating(book.rating)}</p>
+                </div>
+            ` : '';
+
+            const content = document.getElementById('bookDetailContent');
+            content.innerHTML = `
+                <h2 class="text-3xl font-bold text-valentine-red mb-2">${book.title}</h2>
+                <p class="text-xl text-gray-600 mb-4">by ${book.author}</p>
+                
+                <div class="mb-6">
+                    <span class="inline-block px-4 py-2 rounded-full text-sm font-semibold ${badge.color}">
+                        ${badge.text}
+                    </span>
+                </div>
+
+                ${stars}
+
+                ${book.notes ? `
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-valentine-red mb-2">Notes & Thoughts</h3>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <p class="text-gray-700 whitespace-pre-wrap">${book.notes}</p>
+                        </div>
+                    </div>
+                ` : ''}
+
+                <div class="flex gap-2">
+                    <button onclick="editBook(${book.id})" 
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                        Edit Book
+                    </button>
+                    <button onclick="deleteBook(${book.id})" 
+                            class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors">
+                        Delete Book
+                    </button>
+                </div>
+            `;
+
+            document.getElementById('bookListView').classList.add('hidden');
+            document.getElementById('bookDetailView').classList.remove('hidden');
+        }
+
+        // Show book list
+        function showBookList() {
+            document.getElementById('bookListView').classList.remove('hidden');
+            document.getElementById('bookDetailView').classList.add('hidden');
+            document.getElementById('bookFormView').classList.add('hidden');
+            displayBooks();
+        }
+
+        // Show add book form
+        function showAddBookForm() {
+            document.getElementById('bookFormTitle').textContent = 'Add New Book';
+            document.getElementById('bookForm').reset();
+            document.getElementById('bookId').value = '';
+            
+            document.getElementById('bookListView').classList.add('hidden');
+            document.getElementById('bookFormView').classList.remove('hidden');
+            toggleRatingField(); // Hide rating field by default
+        }
+
+        // Toggle rating field visibility based on status
+        function toggleRatingField() {
+            const status = document.getElementById('bookStatus').value;
+            const ratingField = document.getElementById('ratingField');
+            
+            if (status === 'finished') {
+                ratingField.classList.remove('hidden');
+            } else {
+                ratingField.classList.add('hidden');
+            }
+        }
+
+        // Edit an existing book
+        function editBook(id) {
+            const books = getBooks();
+            const book = books.find(b => b.id === id);
+            
+            if (!book) return;
+
+            // Populate form with existing data
+            document.getElementById('bookFormTitle').textContent = 'Edit Book';
+            document.getElementById('bookId').value = book.id;
+            document.getElementById('bookTitle').value = book.title;
+            document.getElementById('bookAuthor').value = book.author;
+            document.getElementById('bookStatus').value = book.status;
+            document.getElementById('bookNotes').value = book.notes || '';
+            
+            // Set rating if it exists
+            if (book.rating) {
+                const ratingInput = document.querySelector(`input[name="rating"][value="${book.rating}"]`);
+                if (ratingInput) ratingInput.checked = true;
+            }
+
+            toggleRatingField(); // Show/hide rating based on status
+
+            // Show form
+            document.getElementById('bookListView').classList.add('hidden');
+            document.getElementById('bookDetailView').classList.add('hidden');
+            document.getElementById('bookFormView').classList.remove('hidden');
+        }
+
+        // Save book (handles both add and edit)
+        function saveBook(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('bookId').value;
+            const title = document.getElementById('bookTitle').value;
+            const author = document.getElementById('bookAuthor').value;
+            const status = document.getElementById('bookStatus').value;
+            const notes = document.getElementById('bookNotes').value;
+            
+            // Get rating only if status is finished
+            let rating = null;
+            if (status === 'finished') {
+                const ratingInput = document.querySelector('input[name="rating"]:checked');
+                rating = ratingInput ? parseInt(ratingInput.value) : null;
+            }
+
+            let books = getBooks();
+
+            if (id) {
+                // Editing existing book
+                books = books.map(b => 
+                    b.id === parseInt(id) 
+                        ? { id: parseInt(id), title, author, status, rating, notes }
+                        : b
+                );
+                console.log('✅ Book updated!');
+            } else {
+                // Adding new book
+                const newBook = {
+                    id: Date.now(),
+                    title,
+                    author,
+                    status,
+                    rating,
+                    notes
+                };
+                books.push(newBook);
+                console.log('✅ New book added!');
+            }
+
+            saveBooksToStorage(books);
+            showBookList();
+        }
+
+        // Delete a book
+        function deleteBook(id) {
+            if (!confirm('Are you sure you want to delete this book?')) {
+                return;
+            }
+
+            let books = getBooks();
+            books = books.filter(b => b.id !== id);
+            saveBooksToStorage(books);
+            
+            console.log('✅ Book deleted!');
+            showBookList();
+        }
+
+        // Initialize books on page load
+        initializeBooks();
+
+                // ==================== PHOTO GALLERY JAVASCRIPT ====================
+        
+        let currentPhotoId = null; // Track which photo is open in lightbox
+
+        // Initialize photos from LocalStorage
+        function initializePhotos() {
+            const existing = localStorage.getItem('photos');
+            if (!existing) {
+                localStorage.setItem('photos', JSON.stringify([]));
+                console.log('✅ Photo gallery initialized!');
+            }
+        }
+
+        // Get photos from LocalStorage
+        function getPhotos() {
+            const photos = localStorage.getItem('photos');
+            return photos ? JSON.parse(photos) : [];
+        }
+
+        // Save photos to LocalStorage
+        function savePhotosToStorage(photos) {
+            try {
+                localStorage.setItem('photos', JSON.stringify(photos));
+                return true;
+            } catch (e) {
+                // LocalStorage quota exceeded
+                if (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
+                    alert('⚠️ Storage limit reached! Please delete some photos to free up space.');
+                    return false;
+                }
+                throw e;
+            }
+        }
+
+                // Handle photo upload from file input - IMPROVED VERSION
+        function handlePhotoUpload(event) {
+            const files = event.target.files;
+            
+            if (files.length === 0) return;
+
+            console.log(`📤 Uploading ${files.length} photo(s)...`);
+            
+            let successCount = 0;
+            let errorCount = 0;
+
+            // Process each file
+            Array.from(files).forEach((file, index) => {
+                // Check if it's actually an image
+                if (!file.type.startsWith('image/')) {
+                    console.error(`⚠️ ${file.name} is not an image file!`);
+                    errorCount++;
+                    return;
+                }
+
+                // Check file size (warn if > 500KB)
+                const fileSizeKB = file.size / 1024;
+                const fileSizeMB = fileSizeKB / 1024;
+                console.log(`📏 ${file.name}: ${fileSizeMB.toFixed(2)}MB`);
+                
+                if (fileSizeMB > 2) {
+                    alert(`⚠️ ${file.name} is ${fileSizeMB.toFixed(1)}MB - this might be too large! Consider using a smaller image.`);
+                }
+
+                // FileReader reads the file from the user's computer
+                const reader = new FileReader();
+                
+                // This function runs AFTER the file is read
+                reader.onload = function(e) {
+                    try {
+                        const base64Image = e.target.result;
+                        
+                        // Create photo object
+                        const photo = {
+                            id: Date.now() + Math.random() + index, // Ensure unique ID
+                            data: base64Image,
+                            caption: '',
+                            uploadedAt: new Date().toISOString()
+                        };
+
+                        // Add to photos array and save
+                        const photos = getPhotos();
+                        photos.push(photo);
+                        
+                        if (savePhotosToStorage(photos)) {
+                            successCount++;
+                            console.log(`✅ ${file.name} uploaded successfully! (${successCount}/${files.length})`);
+                            displayPhotos();
+                        } else {
+                            errorCount++;
+                            console.error(`❌ Failed to save ${file.name} - Storage limit reached!`);
+                        }
+                    } catch (error) {
+                        errorCount++;
+                        console.error(`❌ Error uploading ${file.name}:`, error);
+                    }
+                };
+
+                // Error handler for FileReader
+                reader.onerror = function(error) {
+                    errorCount++;
+                    console.error(`❌ Error reading ${file.name}:`, error);
+                };
+
+                // Start reading the file as a data URL (base64)
+                reader.readAsDataURL(file);
+            });
+
+            // Clear the input
+            event.target.value = '';
+        }
+
+        // Display all photos in the grid
+        function displayPhotos() {
+            const photos = getPhotos();
+            const grid = document.getElementById('photoGrid');
+            const emptyState = document.getElementById('emptyGallery');
+
+            if (photos.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+
+            // Build grid of photo thumbnails
+            grid.innerHTML = photos.map(photo => `
+                <div class="relative group cursor-pointer" onclick="openLightbox(${photo.id})">
+                    <!-- Photo Thumbnail -->
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-lg">
+                        <img src="${photo.data}" alt="${photo.caption || 'Photo'}" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    
+                    <!-- Caption Overlay (shows on hover) -->
+                    ${photo.caption ? `
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-2 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                            ${photo.caption}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+
+            console.log(`📸 Displaying ${photos.length} photo(s)`);
+        }
+
+        // Open photo in lightbox modal
+        function openLightbox(photoId) {
+            const photos = getPhotos();
+            const photo = photos.find(p => p.id === photoId);
+            
+            if (!photo) return;
+
+            currentPhotoId = photoId;
+
+            // Set image and caption in lightbox
+            document.getElementById('lightboxImage').src = photo.data;
+            document.getElementById('lightboxCaption').value = photo.caption || '';
+            
+            // Show the lightbox modal
+            document.getElementById('lightboxModal').classList.remove('hidden');
+            
+            // Prevent body from scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close the lightbox modal
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+            currentPhotoId = null;
+        }
+
+        // Save the caption for the current photo
+        function savePhotoCaption() {
+            if (!currentPhotoId) return;
+
+            const caption = document.getElementById('lightboxCaption').value;
+            let photos = getPhotos();
+            
+            // Update the photo's caption
+            photos = photos.map(p => 
+                p.id === currentPhotoId 
+                    ? { ...p, caption: caption } // Spread operator: copy all properties and update caption
+                    : p
+            );
+
+            savePhotosToStorage(photos);
+            displayPhotos();
+            
+            console.log('✅ Caption saved!');
+            alert('✅ Caption saved!');
+        }
+
+        // Delete the current photo
+        function deletePhoto() {
+            if (!currentPhotoId) return;
+
+            if (!confirm('Are you sure you want to delete this photo?')) {
+                return;
+            }
+
+            let photos = getPhotos();
+            photos = photos.filter(p => p.id !== currentPhotoId);
+            
+            savePhotosToStorage(photos);
+            displayPhotos();
+            closeLightbox();
+            
+            console.log('✅ Photo deleted!');
+        }
+
+        // Initialize photos on page load
+        initializePhotos();
+        displayPhotos();
+
+                // ==================== TRIPS SECTION JAVASCRIPT ====================
+        
+        let currentTripFilter = 'all';
+
+        // Initialize trips with your 2 trips
+        function initializeTrips() {
+            const existing = localStorage.getItem('trips');
+            if (existing) {
+                return; // Trips already loaded
+            }
+
+            const initialTrips = [
+                {
+                    id: Date.now() + 1,
+                    destination: "Duluth, Minnesota",
+                    startDate: "2026-02-06",
+                    endDate: "2026-02-08",
+                    status: "past",
+                    highlights: `Cozy winter getaway\nLake Superior views\nAmazing local restaurants`,
+                    notes: "Perfect winter escape together! ❄️"
+                },
+                {
+                    id: Date.now() + 2,
+                    destination: "Oregon Road Trip",
+                    startDate: "2026-05-01",
+                    endDate: "2026-05-07",
+                    status: "upcoming",
+                    highlights: `Pacific Northwest adventure\nCrater Lake\nPortland food scene\nCoastal drives`,
+                    notes: "She loves the Pacific Northwest - can't wait to explore together! 🌲🏔️"
+                }
+            ];
+
+            localStorage.setItem('trips', JSON.stringify(initialTrips));
+            console.log('✅ Trips initialized!');
+        }
+
+        // Get trips from LocalStorage
+        function getTrips() {
+            const trips = localStorage.getItem('trips');
+            return trips ? JSON.parse(trips) : [];
+        }
+
+        // Save trips to LocalStorage
+        function saveTripsToStorage(trips) {
+            localStorage.setItem('trips', JSON.stringify(trips));
+        }
+
+        // Format date for display
+        function formatTripDate(dateString) {
+            const date = new Date(dateString);
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        // Get status badge
+        function getTripStatusBadge(status) {
+            const badges = {
+                'upcoming': { color: 'bg-blue-100 text-blue-800', icon: '🗓️', text: 'Upcoming' },
+                'past': { color: 'bg-purple-100 text-purple-800', icon: '✅', text: 'Completed' }
+            };
+            return badges[status] || badges['upcoming'];
+        }
+
+        // Display trips based on filter
+        function displayTrips() {
+            const allTrips = getTrips();
+            
+            // Sort by start date (newest first)
+            allTrips.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+
+            // Filter trips
+            let trips = allTrips;
+            if (currentTripFilter === 'upcoming') {
+                trips = allTrips.filter(t => t.status === 'upcoming');
+            } else if (currentTripFilter === 'past') {
+                trips = allTrips.filter(t => t.status === 'past');
+            }
+
+            const grid = document.getElementById('tripsGrid');
+
+            if (trips.length === 0) {
+                grid.innerHTML = '<p class="text-gray-500">No trips in this category yet!</p>';
+                return;
+            }
+
+            grid.innerHTML = trips.map(trip => {
+                const badge = getTripStatusBadge(trip.status);
+                const dateRange = `${formatTripDate(trip.startDate)} - ${formatTripDate(trip.endDate)}`;
+
+                return `
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl font-bold text-valentine-red">${trip.destination}</h3>
+                        </div>
+                        
+                        <p class="text-gray-600 mb-3">📅 ${dateRange}</p>
+                        
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold ${badge.color}">
+                                ${badge.icon} ${badge.text}
+                            </span>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <button onclick="viewTrip(${trip.id})" 
+                                    class="flex-1 bg-valentine-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                View Details
+                            </button>
+                            <button onclick="editTrip(${trip.id})" 
+                                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Edit
+                            </button>
+                            <button onclick="deleteTrip(${trip.id})" 
+                                    class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            console.log(`✈️ Displaying ${trips.length} trip(s)`);
+        }
+
+        // Filter trips
+        function filterTrips(filter) {
+            currentTripFilter = filter;
+
+            // Update tab styling
+            const tabs = ['filterAllTrips', 'filterUpcoming', 'filterPast'];
+            tabs.forEach(tabId => {
+                const tab = document.getElementById(tabId);
+                tab.classList.remove('text-valentine-red', 'border-b-2', 'border-valentine-red');
+                tab.classList.add('text-gray-500');
+            });
+
+            const activeTabMap = {
+                'all': 'filterAllTrips',
+                'upcoming': 'filterUpcoming',
+                'past': 'filterPast'
+            };
+            const activeTab = document.getElementById(activeTabMap[filter]);
+            activeTab.classList.remove('text-gray-500');
+            activeTab.classList.add('text-valentine-red', 'border-b-2', 'border-valentine-red');
+
+            displayTrips();
+        }
+
+        // View trip details
+        function viewTrip(id) {
+            const trips = getTrips();
+            const trip = trips.find(t => t.id === id);
+
+            if (!trip) return;
+
+            const badge = getTripStatusBadge(trip.status);
+            const dateRange = `${formatTripDate(trip.startDate)} - ${formatTripDate(trip.endDate)}`;
+
+            const highlightsList = trip.highlights 
+                ? trip.highlights.split('\n').filter(h => h.trim()).map(h => `<li>${h}</li>`).join('')
+                : '';
+
+            const content = document.getElementById('tripDetailContent');
+            content.innerHTML = `
+                <h2 class="text-3xl font-bold text-valentine-red mb-2">${trip.destination}</h2>
+                <p class="text-xl text-gray-600 mb-4">📅 ${dateRange}</p>
+
+                <div class="mb-6">
+                    <span class="inline-block px-4 py-2 rounded-full text-sm font-semibold ${badge.color}">
+                        ${badge.icon} ${badge.text}
+                    </span>
+                </div>
+
+                ${highlightsList ? `
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-valentine-red mb-2">✨ Highlights</h3>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                ${highlightsList}
+                            </ul>
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${trip.notes ? `
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-valentine-red mb-2">📝 Notes & Memories</h3>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <p class="text-gray-700 whitespace-pre-wrap">${trip.notes}</p>
+                        </div>
+                    </div>
+                ` : ''}
+
+                <div class="flex gap-2">
+                    <button onclick="editTrip(${trip.id})" 
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                        Edit Trip
+                    </button>
+                    <button onclick="deleteTrip(${trip.id})" 
+                            class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors">
+                        Delete Trip
+                    </button>
+                </div>
+            `;
+
+            document.getElementById('tripsListView').classList.add('hidden');
+            document.getElementById('tripDetailView').classList.remove('hidden');
+        }
+
+        // Show trips list
+        function showTripsList() {
+            document.getElementById('tripsListView').classList.remove('hidden');
+            document.getElementById('tripDetailView').classList.add('hidden');
+            document.getElementById('tripFormView').classList.add('hidden');
+            displayTrips();
+        }
+
+        // Show add trip form
+        function showAddTripForm() {
+            document.getElementById('tripFormTitle').textContent = 'Add New Trip';
+            document.getElementById('tripForm').reset();
+            document.getElementById('tripId').value = '';
+
+            document.getElementById('tripsListView').classList.add('hidden');
+            document.getElementById('tripFormView').classList.remove('hidden');
+        }
+
+        // Edit trip
+        function editTrip(id) {
+            const trips = getTrips();
+            const trip = trips.find(t => t.id === id);
+
+            if (!trip) return;
+
+            document.getElementById('tripFormTitle').textContent = 'Edit Trip';
+            document.getElementById('tripId').value = trip.id;
+            document.getElementById('tripDestination').value = trip.destination;
+            document.getElementById('tripStartDate').value = trip.startDate;
+            document.getElementById('tripEndDate').value = trip.endDate;
+            document.getElementById('tripStatus').value = trip.status;
+            document.getElementById('tripHighlights').value = trip.highlights || '';
+            document.getElementById('tripNotes').value = trip.notes || '';
+
+            document.getElementById('tripsListView').classList.add('hidden');
+            document.getElementById('tripDetailView').classList.add('hidden');
+            document.getElementById('tripFormView').classList.remove('hidden');
+        }
+
+        // Save trip
+        function saveTrip(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('tripId').value;
+            const destination = document.getElementById('tripDestination').value;
+            const startDate = document.getElementById('tripStartDate').value;
+            const endDate = document.getElementById('tripEndDate').value;
+            const status = document.getElementById('tripStatus').value;
+            const highlights = document.getElementById('tripHighlights').value;
+            const notes = document.getElementById('tripNotes').value;
+
+            let trips = getTrips();
+
+            if (id) {
+                // Editing
+                trips = trips.map(t => 
+                    t.id === parseInt(id)
+                        ? { id: parseInt(id), destination, startDate, endDate, status, highlights, notes }
+                        : t
+                );
+                console.log('✅ Trip updated!');
+            } else {
+                // Adding new
+                const newTrip = {
+                    id: Date.now(),
+                    destination,
+                    startDate,
+                    endDate,
+                    status,
+                    highlights,
+                    notes
+                };
+                trips.push(newTrip);
+                console.log('✅ New trip added!');
+            }
+
+            saveTripsToStorage(trips);
+            showTripsList();
+        }
+
+        // Delete trip
+        function deleteTrip(id) {
+            if (!confirm('Are you sure you want to delete this trip?')) {
+                return;
+            }
+
+            let trips = getTrips();
+            trips = trips.filter(t => t.id !== id);
+            saveTripsToStorage(trips);
+
+            console.log('✅ Trip deleted!');
+            showTripsList();
+        }
+
+        // Initialize trips on page load
+        initializeTrips();
+
+                // ==================== TRIVIA GAME JAVASCRIPT ====================
+        
+        let currentCategory = 'all';
+        let currentQuestionId = null;
+        let triviaScore = { correct: 0, total: 0 };
+
+        // Question Bank - Add more questions here!
+        const triviaQuestions = [
+            // About Us Category
+            {
+                id: 1,
+                category: 'about-us',
+                question: "Where did we just return from on February 6-8, 2026?",
+                options: ["Minneapolis", "Duluth", "Chicago", "Milwaukee"],
+                correctAnswer: 1,
+                explanation: "We just had an amazing winter getaway in Duluth! ❄️"
+            },
+            {
+                id: 2,
+                category: 'about-us',
+                question: "Where are we planning to road trip in May 2026?",
+                options: ["California", "Oregon", "Washington", "Colorado"],
+                correctAnswer: 1,
+                explanation: "Oregon here we come! She loves the Pacific Northwest! 🌲"
+            },
+            {
+                id: 3,
+                category: 'about-us',
+                question: "What book is she currently reading?",
+                options: ["The Seven Husbands of Evelyn Hugo", "Black Cake", "Tomorrow and Tomorrow", "Project Hail Mary"],
+                correctAnswer: 1,
+                explanation: "Black Cake by Charmaine Wilkerson - a great read!"
+            },
+
+            // Movies & TV
+            {
+                id: 4,
+                category: 'movies',
+                question: "What year was the first Toy Story movie released?",
+                options: ["1993", "1995", "1997", "1999"],
+                correctAnswer: 1,
+                explanation: "Toy Story (1995) was Pixar's first feature film!"
+            },
+            {
+                id: 5,
+                category: 'movies',
+                question: "Who directed 'The Dark Knight' trilogy?",
+                options: ["Steven Spielberg", "Christopher Nolan", "Quentin Tarantino", "Martin Scorsese"],
+                correctAnswer: 1,
+                explanation: "Christopher Nolan directed the epic Dark Knight trilogy!"
+            },
+            {
+                id: 6,
+                category: 'movies',
+                question: "What is the highest-grossing film of all time (not adjusted for inflation)?",
+                options: ["Titanic", "Avengers: Endgame", "Avatar", "Star Wars: The Force Awakens"],
+                correctAnswer: 2,
+                explanation: "Avatar (2009) is the highest-grossing film ever at over $2.9 billion!"
+            },
+
+            // Music
+            {
+                id: 7,
+                category: 'music',
+                question: "Which artist has won the most Grammy Awards of all time?",
+                options: ["Beyoncé", "Taylor Swift", "Kanye West", "Jay-Z"],
+                correctAnswer: 0,
+                explanation: "Beyoncé holds the record with 32 Grammy wins!"
+            },
+            {
+                id: 8,
+                category: 'music',
+                question: "What was the best-selling album of the 2000s?",
+                options: ["Hybrid Theory - Linkin Park", "Come Away With Me - Norah Jones", "Fearless - Taylor Swift", "21 - Adele"],
+                correctAnswer: 1,
+                explanation: "Norah Jones' 'Come Away With Me' was the best-selling album of the 2000s!"
+            },
+            {
+                id: 9,
+                category: 'music',
+                question: "Which band released the album 'Abbey Road'?",
+                options: ["The Rolling Stones", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+                correctAnswer: 1,
+                explanation: "The Beatles released Abbey Road in 1969 - one of the greatest albums ever!"
+            },
+
+            // Food
+            {
+                id: 10,
+                category: 'food',
+                question: "What is the main ingredient in hummus?",
+                options: ["Lentils", "Chickpeas", "White beans", "Black beans"],
+                correctAnswer: 1,
+                explanation: "Hummus is made from chickpeas (garbanzo beans)!"
+            },
+            {
+                id: 11,
+                category: 'food',
+                question: "What type of pasta is shaped like little rice grains?",
+                options: ["Orzo", "Couscous", "Farro", "Quinoa"],
+                correctAnswer: 0,
+                explanation: "Orzo is the tiny pasta that looks like rice!"
+            },
+            {
+                id: 12,
+                category: 'food',
+                question: "Which country is the origin of the croissant?",
+                options: ["France", "Italy", "Austria", "Belgium"],
+                correctAnswer: 2,
+                explanation: "Surprisingly, the croissant originated in Austria, not France!"
+            },
+
+            // Travel
+            {
+                id: 13,
+                category: 'travel',
+                question: "What is the capital of Iceland?",
+                options: ["Oslo", "Helsinki", "Reykjavik", "Copenhagen"],
+                correctAnswer: 2,
+                explanation: "Reykjavik is Iceland's capital and largest city!"
+            },
+            {
+                id: 14,
+                category: 'travel',
+                question: "Which US state has the most national parks?",
+                options: ["California", "Alaska", "Utah", "Colorado"],
+                correctAnswer: 0,
+                explanation: "California has 9 national parks - the most of any state!"
+            },
+            {
+                id: 15,
+                category: 'travel',
+                question: "What is the longest river in the world?",
+                options: ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
+                correctAnswer: 1,
+                explanation: "The Nile River is the longest at about 4,135 miles!"
+            },
+        ];
+
+        // Initialize trivia progress
+        function initializeTriviaProgress() {
+            const existing = localStorage.getItem('triviaProgress');
+            if (!existing) {
+                const progress = {
+                    answeredQuestions: [], // Array of question IDs that have been answered
+                    score: { correct: 0, total: 0 }
+                };
+                localStorage.setItem('triviaProgress', JSON.stringify(progress));
+                console.log('✅ Trivia progress initialized!');
+            }
+            updateTriviaDisplay();
+        }
+
+        // Get trivia progress
+        function getTriviaProgress() {
+            const progress = localStorage.getItem('triviaProgress');
+            return progress ? JSON.parse(progress) : { answeredQuestions: [], score: { correct: 0, total: 0 } };
+        }
+
+        // Save trivia progress
+        function saveTriviaProgress(progress) {
+            localStorage.setItem('triviaProgress', JSON.stringify(progress));
+        }
+
+        // Update score and progress display
+        function updateTriviaDisplay() {
+            const progress = getTriviaProgress();
+            triviaScore = progress.score;
+
+            // Update score display
+            document.getElementById('scoreDisplay').textContent = 
+                `${progress.score.correct} / ${progress.score.total}`;
+
+            // Update progress for each category
+            const categories = ['all', 'about-us', 'movies', 'music', 'food', 'travel'];
+            categories.forEach(cat => {
+                const catQuestions = cat === 'all' 
+                    ? triviaQuestions 
+                    : triviaQuestions.filter(q => q.category === cat);
+                
+                const answeredInCat = catQuestions.filter(q => 
+                    progress.answeredQuestions.includes(q.id)
+                ).length;
+
+                const element = document.getElementById(`progress-${cat}`);
+                if (element) {
+                    element.textContent = `${answeredInCat} / ${catQuestions.length} answered`;
+                }
+            });
+        }
+
+        // Start trivia with selected category
+        function startTrivia(category) {
+            currentCategory = category;
+            
+            // Show game view, hide menu
+            document.getElementById('triviaMenuView').classList.add('hidden');
+            document.getElementById('triviaGameView').classList.remove('hidden');
+
+            // Update category badge
+            const categoryNames = {
+                'all': '🎯 All Categories',
+                'about-us': '💕 About Us',
+                'movies': '🎬 Movies & TV',
+                'music': '🎵 Music',
+                'food': '🍕 Food',
+                'travel': '✈️ Travel'
+            };
+            document.getElementById('currentCategoryBadge').textContent = categoryNames[category];
+
+            loadNextQuestion();
+        }
+
+        // Load next unanswered question
+        function loadNextQuestion() {
+            const progress = getTriviaProgress();
+            
+            // Get questions from current category
+            let availableQuestions = currentCategory === 'all'
+                ? triviaQuestions
+                : triviaQuestions.filter(q => q.category === currentCategory);
+
+            // Filter out already answered questions
+            availableQuestions = availableQuestions.filter(q => 
+                !progress.answeredQuestions.includes(q.id)
+            );
+
+            if (availableQuestions.length === 0) {
+                // No more questions in this category
+                document.getElementById('answerOptions').innerHTML = '';
+                document.getElementById('feedbackSection').classList.add('hidden');
+                document.getElementById('noQuestionsMessage').classList.remove('hidden');
+                return;
+            }
+
+            // Pick a random question from available ones
+            const randomIndex = Math.floor(Math.random() * availableQuestions.length);
+            const question = availableQuestions[randomIndex];
+            currentQuestionId = question.id;
+
+            // Display question
+            document.getElementById('questionText').textContent = question.question;
+            
+            // Display answer options
+            const optionsHTML = question.options.map((option, index) => `
+                <button onclick="selectAnswer(${index})" 
+                        class="answer-btn w-full text-left p-4 rounded-lg border-2 border-gray-300 hover:border-valentine-red hover:bg-pink-50 transition-all">
+                    ${option}
+                </button>
+            `).join('');
+            
+            document.getElementById('answerOptions').innerHTML = optionsHTML;
+            document.getElementById('feedbackSection').classList.add('hidden');
+            document.getElementById('noQuestionsMessage').classList.add('hidden');
+        }
+
+        // Handle answer selection
+        function selectAnswer(selectedIndex) {
+            const question = triviaQuestions.find(q => q.id === currentQuestionId);
+            if (!question) return;
+
+            const isCorrect = selectedIndex === question.correctAnswer;
+            
+            // Update progress
+            const progress = getTriviaProgress();
+            progress.answeredQuestions.push(currentQuestionId);
+            progress.score.total++;
+            if (isCorrect) {
+                progress.score.correct++;
+            }
+            saveTriviaProgress(progress);
+            updateTriviaDisplay();
+
+            // Highlight correct/wrong answers
+            const answerButtons = document.querySelectorAll('.answer-btn');
+            answerButtons.forEach((btn, index) => {
+                btn.disabled = true; // Disable all buttons
+                if (index === question.correctAnswer) {
+                    btn.classList.add('bg-green-100', 'border-green-500');
+                    btn.classList.remove('hover:border-valentine-red', 'hover:bg-pink-50');
+                } else if (index === selectedIndex && !isCorrect) {
+                    btn.classList.add('bg-red-100', 'border-red-500');
+                    btn.classList.remove('hover:border-valentine-red', 'hover:bg-pink-50');
+                }
+            });
+
+            // Show feedback
+            const feedbackContent = document.getElementById('feedbackContent');
+            if (isCorrect) {
+                feedbackContent.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">✅</div>
+                        <h3 class="text-2xl font-bold text-green-600 mb-2">Correct!</h3>
+                        <p class="text-gray-700">${question.explanation}</p>
+                    </div>
+                `;
+            } else {
+                feedbackContent.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">❌</div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Not quite!</h3>
+                        <p class="text-gray-700 mb-2">The correct answer was: <strong>${question.options[question.correctAnswer]}</strong></p>
+                        <p class="text-gray-600">${question.explanation}</p>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('feedbackSection').classList.remove('hidden');
+        }
+
+        // Load next question
+        function nextQuestion() {
+            loadNextQuestion();
+        }
+
+        // Exit trivia game back to menu
+        function exitTriviaGame() {
+            document.getElementById('triviaMenuView').classList.remove('hidden');
+            document.getElementById('triviaGameView').classList.add('hidden');
+            updateTriviaDisplay();
+        }
+
+        // Reset all trivia progress
+        function resetTriviaProgress() {
+            if (!confirm('Are you sure you want to reset all your trivia progress? This will clear your score and let you answer all questions again.')) {
+                return;
+            }
+
+            const progress = {
+                answeredQuestions: [],
+                score: { correct: 0, total: 0 }
+            };
+            saveTriviaProgress(progress);
+            updateTriviaDisplay();
+            
+            console.log('✅ Trivia progress reset!');
+            alert('✅ Progress reset! All questions are available again.');
+        }
+
+        // Initialize trivia on page load
+        initializeTriviaProgress();
+
+                // ==================== SECRET LETTER JAVASCRIPT ====================
+        
+        // Initialize secret letter
+        function initializeSecretLetter() {
+            const existing = localStorage.getItem('secretLetter');
+            if (!existing) {
+                const letterData = {
+                    passwordHash: null, // Will be set on first unlock
+                    content: '',
+                    lastEdited: null
+                };
+                localStorage.setItem('secretLetter', JSON.stringify(letterData));
+                console.log('✅ Secret letter initialized!');
+            }
+        }
+
+        // Simple hash function (for password storage)
+        // Note: This is NOT cryptographically secure, but sufficient for a personal app
+        function simpleHash(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; // Convert to 32-bit integer
+            }
+            return hash.toString();
+        }
+
+        // Get secret letter data
+        function getSecretLetter() {
+            const data = localStorage.getItem('secretLetter');
+            return data ? JSON.parse(data) : { passwordHash: null, content: '', lastEdited: null };
+        }
+
+        // Save secret letter data
+        function saveSecretLetter(data) {
+            localStorage.setItem('secretLetter', JSON.stringify(data));
+        }
+
+        // Check if password is set
+        function isPasswordSet() {
+            const letterData = getSecretLetter();
+            return letterData.passwordHash !== null;
+        }
+
+        // Unlock letter (handles both first-time setup and subsequent unlocks)
+        function unlockLetter(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('letterPassword').value;
+            const letterData = getSecretLetter();
+
+            if (!isPasswordSet()) {
+                // First time - set the password
+                letterData.passwordHash = simpleHash(password);
+                saveSecretLetter(letterData);
+                
+                console.log('✅ Password set for the first time!');
+                showLetterView();
+            } else {
+                // Verify password
+                if (simpleHash(password) === letterData.passwordHash) {
+                    console.log('✅ Password correct!');
+                    showLetterView();
+                } else {
+                    // Wrong password
+                    document.getElementById('passwordError').classList.remove('hidden');
+                    document.getElementById('letterPassword').value = '';
+                    document.getElementById('letterPassword').focus();
+                    
+                    // Hide error after 3 seconds
+                    setTimeout(() => {
+                        document.getElementById('passwordError').classList.add('hidden');
+                    }, 3000);
+                }
+            }
+        }
+
+        // Show the letter view (after unlocking)
+        function showLetterView() {
+            document.getElementById('passwordEntryView').classList.add('hidden');
+            document.getElementById('letterView').classList.remove('hidden');
+            
+            // Load and display letter content
+            const letterData = getSecretLetter();
+            displayLetterContent(letterData.content);
+            
+            // Reset password field
+            document.getElementById('letterPassword').value = '';
+        }
+
+        // Display letter content
+        function displayLetterContent(content) {
+            const letterContentDiv = document.getElementById('letterContent');
+            
+            if (!content || content.trim() === '') {
+                letterContentDiv.innerHTML = '<p class="text-gray-500 italic text-center">No letter written yet. Click "Edit Letter" to write your message.</p>';
+            } else {
+                // Convert line breaks to paragraphs for better formatting
+                const paragraphs = content.split('\n\n').map(para => 
+                    para.trim() ? `<p class="mb-4 text-gray-800 leading-relaxed" style="font-family: 'Georgia', serif; font-size: 1.1rem;">${para.replace(/\n/g, '<br>')}</p>` : ''
+                ).join('');
+                
+                letterContentDiv.innerHTML = paragraphs;
+            }
+        }
+
+        // Lock the letter (return to password entry)
+        function lockLetter() {
+            document.getElementById('letterView').classList.add('hidden');
+            document.getElementById('passwordEntryView').classList.remove('hidden');
+            
+            // Hide edit mode if it was showing
+            document.getElementById('letterEditMode').classList.add('hidden');
+            document.getElementById('letterDisplayMode').classList.remove('hidden');
+            
+            console.log('🔒 Letter locked!');
+        }
+
+        // Show letter edit mode
+        function showLetterEditMode() {
+            const letterData = getSecretLetter();
+            document.getElementById('letterTextarea').value = letterData.content || '';
+            
+            document.getElementById('letterDisplayMode').classList.add('hidden');
+            document.getElementById('letterEditMode').classList.remove('hidden');
+        }
+
+        // Cancel letter edit
+        function cancelLetterEdit() {
+            document.getElementById('letterEditMode').classList.add('hidden');
+            document.getElementById('letterDisplayMode').classList.remove('hidden');
+        }
+
+        // Save letter content
+        function saveLetterContent(event) {
+            event.preventDefault();
+            
+            const content = document.getElementById('letterTextarea').value;
+            const letterData = getSecretLetter();
+            
+            letterData.content = content;
+            letterData.lastEdited = new Date().toISOString();
+            
+            saveSecretLetter(letterData);
+            displayLetterContent(content);
+            
+            // Return to display mode
+            document.getElementById('letterEditMode').classList.add('hidden');
+            document.getElementById('letterDisplayMode').classList.remove('hidden');
+            
+            console.log('✅ Letter saved!');
+            alert('💕 Your letter has been saved!');
+        }
+
+        // Change password
+        function changePassword() {
+            const currentPassword = prompt('Enter your current password:');
+            if (!currentPassword) return;
+            
+            const letterData = getSecretLetter();
+            
+            if (simpleHash(currentPassword) !== letterData.passwordHash) {
+                alert('❌ Incorrect current password!');
+                return;
+            }
+            
+            const newPassword = prompt('Enter your new password:');
+            if (!newPassword) return;
+            
+            const confirmPassword = prompt('Confirm your new password:');
+            if (newPassword !== confirmPassword) {
+                alert('❌ Passwords do not match!');
+                return;
+            }
+            
+            letterData.passwordHash = simpleHash(newPassword);
+            saveSecretLetter(letterData);
+            
+            alert('✅ Password changed successfully!');
+            console.log('✅ Password updated!');
+        }
+
+        // Update password prompt based on whether password is set
+        function updatePasswordPrompt() {
+            if (!isPasswordSet()) {
+                document.getElementById('passwordPromptTitle').textContent = 'Set a Password';
+                document.getElementById('passwordPromptMessage').textContent = 'Create a password to protect this special letter. Only you will know it!';
+            } else {
+                document.getElementById('passwordPromptTitle').textContent = 'This letter is protected';
+                document.getElementById('passwordPromptMessage').textContent = 'Enter the password to read this special message';
+            }
+        }
+
+        // Initialize secret letter on page load
+        initializeSecretLetter();
+        updatePasswordPrompt();
+
+                // ==================== INTRO SCREEN ====================
+        
+        // Enter the app from intro screen
+        function enterApp() {
+            // Fade out intro with a nice animation
+            const intro = document.getElementById('intro');
+            intro.style.opacity = '1';
+            intro.style.transition = 'opacity 1s ease-out';
+            
+            setTimeout(() => {
+                intro.style.opacity = '0';
+            }, 100);
+            
+            setTimeout(() => {
+                navigateTo('dashboard');
+            }, 1000);
+            
+            console.log('💝 Entering the Valentine\'s app!');
+        }
+
+
+    </script>
+
+</body>
+</html>
+
+
